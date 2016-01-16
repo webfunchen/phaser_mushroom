@@ -1,0 +1,22 @@
+{
+
+    "main": "game.html",
+
+    "name": "使用phaser一个小demo",
+
+    "description": "demo phaser use nw",
+
+    "version": "0.1.0",
+    "nodejs": true,
+    "node-main": "app.js",
+    "window": {
+        "title": "phaser采蘑菇游戏demo",
+        "toolbar": false,
+        "width": 800,
+        "height": 600,
+        "resizeable": false,
+        "show_in_taskbar": true,
+        "frame": true
+    }
+
+}

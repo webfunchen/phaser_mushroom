@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘蘑菇</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<style>
+		body{background:#fff;font-family:"Microsoft Yahei";}
+		.wrapper{width:800px;height:600px;position:fixed;left:50%;top:50%;margin-left:-400px;margin-top:-300px;}
+		#container{width:800px;height:600px;position:fixed;left:50%;top:50%;margin-left:-400px;margin-top:-300px;}
+		#GUI{width:100%;height:100;position:absolute;left:0;top:0;z-index:99;}
+		.score{position:absolute;right:10px;top:10px;font-size:12px;color:#fff;height:20px;padding:0 10px 0 25px;line-height:20px;}
+		.score img{width:20px;position:absolute;left:0;top:0}
+		.user-status{height:20px;position:absolute;left:10px;top:10px;}
+		.user-status .user-lives{width:auto;}
+		.user-status .user-lives li{float:left;width:20px;height:20px;overflow:hidden;margin-right:5px;font-size:12px;color:#fff;line-height:20px;}
+		.user-status .user-lives li img{-webkit-transform:scale(0.7);margin-left:-15px;margin-top:-20px;}
+	</style>
+	<script src="js/phaser.min.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="GUI">
+			<div class="user-status">
+				<ul class="user-lives">
+					<li><img src="assets/cha.png" alt=""></li>
+					<li>x<span id="user-lives-num">3</span></li>
+				</ul>
+			</div>
+			<p class="score"><img src="assets/food.png" alt=""> x<span id="score-num">0</span></p>
+		</div>
+		<div id="container">
+
+		</div>
+	</div>
+	<script src="js/gameobject.js"></script>
+	<script src="js/stages.js"></script>
+	<script src="js/init.js"></script>
+</body>
+</html>
